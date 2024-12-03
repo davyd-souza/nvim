@@ -92,7 +92,20 @@ return {
 						},
 					},
 				},
-				biome = {},
+				-- biome = {
+				-- 	capabilities = capabilities,
+				-- 	root_dir = require("lspconfig.util").root_pattern("biome.json"),
+				-- 	cmd = { "biome", "lsp-proxy" },
+				-- 	filetypes = {
+				-- 		"javascript",
+				-- 		"javascriptreact",
+				-- 		"json",
+				-- 		"jsonc",
+				-- 		"typescript",
+				-- 		"typescript.tsx",
+				-- 		"typescriptreact",
+				-- 	},
+				-- },
 			}
 
 			require("mason").setup()
@@ -100,6 +113,7 @@ return {
 			local ensure_installed = vim.tbl_keys(servers or {})
 			vim.list_extend(ensure_installed, {
 				"stylua",
+				"biome",
 			})
 
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })
