@@ -34,4 +34,4 @@ vim.opt.colorcolumn = "80"
 vim.g.mapleader = " "
 
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }

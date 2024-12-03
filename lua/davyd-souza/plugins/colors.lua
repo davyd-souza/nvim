@@ -1,5 +1,5 @@
 function ColorMyPencils(theme)
-	theme = theme or 'tokyonight-night'
+	theme = theme or "tokyonight-night"
 
 	vim.cmd.colorscheme(theme)
 
@@ -26,7 +26,7 @@ return {
 		"rose-pine/neovim",
 		name = "rose-pine",
 		config = function()
-			require('rose-pine').setup({
+			require("rose-pine").setup({
 				disable_background = true,
 				styles = {
 					italic = false,
@@ -47,6 +47,6 @@ return {
 			})
 
 			ColorMyPencils("catppuccin")
-		end
+		end,
 	},
 }

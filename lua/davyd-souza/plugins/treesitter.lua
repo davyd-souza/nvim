@@ -1,20 +1,20 @@
 return {
-	'nvim-treesitter/nvim-treesitter',
-	build = ':TSUpdate',
-	main = 'nvim-treesitter.configs',
+	"nvim-treesitter/nvim-treesitter",
+	build = ":TSUpdate",
+	main = "nvim-treesitter.configs",
 	config = function()
-		require('nvim-treesitter.configs').setup({
+		require("nvim-treesitter.configs").setup({
 			ensure_installed = {
-				'lua',
-				'vim',
-				'vimdoc',
-				'bash',
-				'css',
-				'html',
-				'javascript',
-				'lua',
-				'luadoc',
-				'typescript',
+				"lua",
+				"vim",
+				"vimdoc",
+				"bash",
+				"css",
+				"html",
+				"javascript",
+				"lua",
+				"luadoc",
+				"typescript",
 			},
 
 			sync_install = false,
@@ -47,6 +47,7 @@ return {
 		}
 
 		vim.treesitter.language.register('templ', 'templ')
-		]]--
-	end
+		]]
+		--
+	end,
 }
